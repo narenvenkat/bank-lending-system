@@ -158,5 +158,10 @@ app.get("/api/v1/customers/:customer_id/overview", (req, res) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.send('Bank Lending API is running 🚀');
+});
+
+
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
